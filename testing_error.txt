@@ -1,0 +1,20 @@
+Square
+-----------------------
+1. Wrong calculation of total (Order ID : #SQ5522)
+By Checking the order it is clear that extra charge is 3% after $5000 order.
+
+
+v4.fello.dev
+-----------------------
+500 Server Error Modal is open on creating new order with blank shipping code
+
+
+levy.fello.dev
+-------------------------
+After extending the order rush fee is calculated wrong.
+
+
+aramark.fello.dev
+--------------------
+Showing Something went wrong alert and after clicking on that date picker is opened
+

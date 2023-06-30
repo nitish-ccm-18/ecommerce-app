@@ -1,0 +1,36 @@
++--------+----------+------------------------+-----------------------------+---------------------------------------------------------------+------------------------------------------+
+| Domain | Method   | URI                    | Name                        | Action                                                        | Middleware                               |
++--------+----------+------------------------+-----------------------------+---------------------------------------------------------------+------------------------------------------+
+|        | GET|HEAD | /                      | generated::ZM6oTe7zY3alYbTf | Closure                                                       | web                                      |
+|        | GET|HEAD | admin/dashboard        | admin.dashboard             | App\Http\Controllers\AdminController@dashboard                | web                                      |
+|        | GET|HEAD | api/user               | generated::sKmMSdDa51V6vIGU | Closure                                                       | api                                      |
+|        |          |                        |                             |                                                               | App\Http\Middleware\Authenticate:sanctum |
+|        | GET|HEAD | categories             | categories.index            | App\Http\Controllers\CategoryController@index                 | web                                      |
+|        | GET|HEAD | categories/create      | categories.create           | App\Http\Controllers\CategoryController@create                | web                                      |
+|        | POST     | categories/create      | categories.store            | App\Http\Controllers\CategoryController@store                 | web                                      |
+|        | GET|HEAD | categories/edit/{id}   | categories.edit             | App\Http\Controllers\CategoryController@edit                  | web                                      |
+|        | PATCH    | categories/update      | categories.update           | App\Http\Controllers\CategoryController@update                | web                                      |
+|        | GET|HEAD | categories/{id}        | categories.show             | App\Http\Controllers\CategoryController@show                  | web                                      |
+|        | GET|HEAD | categories/{id}/status | categories.status.change    | App\Http\Controllers\CategoryController@change_status         | web                                      |
+|        | GET|HEAD | login                  | login                       | App\Http\Controllers\Authcontroller@login                     | web                                      |
+|        | POST     | login                  | authenticate                | App\Http\Controllers\Authcontroller@authenticate              | web                                      |
+|        | GET|HEAD | logout                 | logout                      | App\Http\Controllers\Authcontroller@logout                    | web                                      |
+|        | GET|HEAD | password/forgot        | password.request            | App\Http\Controllers\Authcontroller@forgot_password           | web                                      |
+|        | POST     | password/forgot        | password.email              | App\Http\Controllers\Authcontroller@send_password_reset_email | web                                      |
+|        | GET|HEAD | products               | products.index              | App\Http\Controllers\ProductController@index                  | web                                      |
+|        | GET|HEAD | products/create        | products.create             | App\Http\Controllers\ProductController@create                 | web                                      |
+|        | POST     | products/create        | products.store              | App\Http\Controllers\ProductController@store                  | web                                      |
+|        | POST     | products/edit          | products.update             | App\Http\Controllers\ProductController@update                 | web                                      |
+|        | GET|HEAD | products/edit/{id}     | products.edit               | App\Http\Controllers\ProductController@edit                   | web                                      |
+|        | GET|HEAD | products/{id}          | products.show               | App\Http\Controllers\ProductController@show                   | web                                      |
+|        | GET|HEAD | products/{id}/status   | products.status.change      | App\Http\Controllers\ProductController@change_status          | web                                      |
+|        | GET|HEAD | profile/me             | myprofile                   | App\Http\Controllers\ProfileController@my_profile             | web                                      |
+|        | PATCH    | profile/update         | profile.update              | App\Http\Controllers\ProfileController@update                 | web                                      |
+|        | GET|HEAD | profile/{id}           | user.profile                | App\Http\Controllers\ProfileController@user_profile           | web                                      |
+|        | POST     | register               | user.create                 | App\Http\Controllers\Authcontroller@store                     | web                                      |
+|        | GET|HEAD | register               | register                    | App\Http\Controllers\Authcontroller@register                  | web                                      |
+|        | POST     | reset-password         | password.update             | App\Http\Controllers\Authcontroller@update_password           | web                                      |
+|        | GET|HEAD | reset-password/{token} | password.reset              | App\Http\Controllers\Authcontroller@reset_password            | web                                      |
+|        | GET|HEAD | sanctum/csrf-cookie    | generated::dMTNomuFUC6nXF0s | Laravel\Sanctum\Http\Controllers\CsrfCookieController@show    | web                                      |
+|        | GET|HEAD | user/dashboard         | user.dashboard              | App\Http\Controllers\UserController@dashboard                 | web                                      |
++--------+----------+------------------------+-----------------------------+---------------------------------------------------------------+------------------------------------------+
