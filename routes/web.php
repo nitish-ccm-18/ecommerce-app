@@ -70,7 +70,7 @@ Route::get('/user/dashboard', [UserController::class, 'dashboard'])
 /*---------------------Admin Routes Starts Here----------------------------*/
 
 // Dashboard
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])
+Route::get('/admin/dashboard', [AdminController::class, 'index'])
 ->name('admin.dashboard');
 
 // Categories Routes
